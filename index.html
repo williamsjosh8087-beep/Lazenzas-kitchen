@@ -20,13 +20,13 @@
         <div class="grid md:grid-cols-2 gap-6">
             <!-- Food Card 1 -->
             <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100">
-                <!-- Change this URL to your own food picture later! -->
                 <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" class="w-full h-40 object-cover rounded-lg">
                 <h3 class="text-xl font-bold mt-2">Cheese Pizza</h3>
                 <p class="text-gray-500 text-sm">Melty, gooey cheese on a crispy crust.</p>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">$10.00</span>
-                    <button onclick="addToCart('Cheese Pizza', 10)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                    <!-- Changed $ to ₦ here -->
+                    <span class="text-green-600 font-bold text-lg">₦10,000</span>
+                    <button onclick="addToCart('Cheese Pizza', 10000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
                 </div>
             </div>
 
@@ -36,8 +36,9 @@
                 <h3 class="text-xl font-bold mt-2">Yummy Burger</h3>
                 <p class="text-gray-500 text-sm">Juicy burger with fresh lettuce and sauce.</p>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">$8.00</span>
-                    <button onclick="addToCart('Yummy Burger', 8)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                    <!-- Changed $ to ₦ here -->
+                    <span class="text-green-600 font-bold text-lg">₦8,000</span>
+                    <button onclick="addToCart('Yummy Burger', 8000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
                 </div>
             </div>
         </div>
@@ -47,7 +48,6 @@
     <section class="max-w-2xl mx-auto p-6 text-center">
         <h2 class="text-2xl font-bold text-red-600 mb-4">Watch Us Cook!</h2>
         <div class="rounded-xl overflow-hidden shadow-lg aspect-video">
-            <!-- Tip: Swap "dQw4w9WgXcQ" with your actual YouTube video ID! -->
             <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
@@ -64,9 +64,9 @@
     <!-- 5. THE SECRET BRAIN (JavaScript) -->
     <script>
         let bag = [];
-        // ⚠️ PUT YOUR WHATSAPP NUMBER BELOW! (Country code first, no spaces, no plus signs!)
-        // Example: "2348012345678" or "15551234567"
-        const MY_PHONE_NUMBER = "15551234567"; 
+        // ⚠️ PUT YOUR WHATSAPP NUMBER BELOW! (Start with 234 for Nigeria, no spaces, no + sign)
+        // Example: "2348031234567"
+        const MY_PHONE_NUMBER = "2348031234567"; 
 
         function addToCart(itemName, itemPrice) {
             bag.push({ name: itemName, price: itemPrice });
@@ -77,13 +77,14 @@
             const cartDiv = document.getElementById('cart');
             const itemsDiv = document.getElementById('cart-items');
             
-            cartDiv.classList.remove('hidden'); // Show the cart box
+            cartDiv.classList.remove('hidden');
             
             let total = 0;
             itemsDiv.innerHTML = bag.map(item => {
                 total += item.price;
-                return `<div>• ${item.name} ($${item.price})</div>`;
-            }).join('') + `<div class="font-bold mt-2 pt-2 border-t text-red-600">Total: $${total}</div>`;
+                // Changed $ to ₦ here for the cart list
+                return `<div>• ${item.name} (₦${item.price.toLocaleString()})</div>`;
+            }).join('') + `<div class="font-bold mt-2 pt-2 border-t text-red-600">Total: ₦${total.toLocaleString()}</div>`;
         }
 
         function sendToWhatsApp() {
@@ -91,12 +92,12 @@
             let total = 0;
             
             bag.forEach(item => {
-                text += `• ${item.name} ($${item.price})\n`;
+                // Changed $ to ₦ here for the WhatsApp message
+                text += `• ${item.name} (₦${item.price.toLocaleString()})\n`;
                 total += item.price;
             });
-            text += `\n*Total Money: $${total}* \n\nPlease reply to confirm my order!`;
+            text += `\n*Total Money: ₦${total.toLocaleString()}* \n\nPlease reply to confirm my order!`;
             
-            // This turns the text into a safe internet link link
             let safeText = encodeURIComponent(text);
             window.open(`https://wa.me/${MY_PHONE_NUMBER}?text=${safeText}`, '_blank');
         }
