@@ -1,253 +1,255 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazenzas Kitchen</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-amber-50 text-gray-800 pb-24">
+<body class="bg-amber-50 text-gray-800 pb-32">
 
-    <header class="bg-red-600 text-white text-center py-12 shadow-md">
-        <h1 class="text-4xl font-extrabold tracking-wide">🍕 LAZENZAS KITCHEN 🍔</h1>
-        <p class="text-lg mt-2 italic">The Yummiest Food Delivered Straight To Your WhatsApp!</p>
+    <header class="bg-red-600 text-white text-center py-8 px-4 shadow-md">
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-wide">🍕 LAZENZAS KITCHEN 🍔</h1>
+        <p class="text-sm md:text-lg mt-2 italic">The Yummiest Food Delivered Straight To Your WhatsApp!</p>
     </header>
 
-    <main class="max-w-6xl mx-auto p-6">
-        <h2 class="text-3xl font-bold text-center my-6 text-red-600">Our Delicious Menu</h2>
+    <main class="max-w-6xl mx-auto p-4 md:p-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center my-4 md:my-6 text-red-600">Our Delicious Menu</h2>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/aT6mqfQLj28" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Colorful Homemade Fried Rice</h3>
-                    <p class="text-gray-500 text-sm">Bright, vibrant, and packed with classic home flavors.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Colorful Homemade Fried Rice</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Bright, vibrant, and packed with classic home flavors.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦6,500</span>
-                    <button onclick="addToCart('Colorful Homemade Fried Rice', 6500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦6,500</span>
+                    <button onclick="addToCart('Colorful Homemade Fried Rice', 6500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/aT6mqfQLj28" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Delicious Fried Noodles</h3>
-                    <p class="text-gray-500 text-sm">Savory stir-fried noodles with a perfect mix of spices.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Delicious Fried Noodles</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Savory stir-fried noodles with a perfect mix of spices.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦4,000</span>
-                    <button onclick="addToCart('Delicious Fried Noodles', 4000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦4,000</span>
+                    <button onclick="addToCart('Delicious Fried Noodles', 4000)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/d1FpdofRV94" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Freshly Baked Meat Pie</h3>
-                    <p class="text-gray-500 text-sm">Flaky golden crust stuffed with seasoned rich minced meat filling.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Freshly Baked Meat Pie</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Flaky golden crust stuffed with seasoned rich minced meat filling.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦3,500</span>
-                    <button onclick="addToCart('Freshly Baked Meat Pie', 3500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦3,500</span>
+                    <button onclick="addToCart('Freshly Baked Meat Pie', 3500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/kW0J40FpJcc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Soft Homemade Moi Moi</h3>
-                    <p class="text-gray-500 text-sm">Perfectly steamed bean cake, rich, smooth, and delicious.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Soft Homemade Moi Moi</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Perfectly steamed bean cake, rich, smooth, and delicious.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦3,800</span>
-                    <button onclick="addToCart('Soft Homemade Moi Moi', 3800)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦3,800</span>
+                    <button onclick="addToCart('Soft Homemade Moi Moi', 3800)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/vsWp7ASAV5Y" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Chicken Indomie</h3>
-                    <p class="text-gray-500 text-sm">Special noodles tossed with crisp vegetables and savory chicken fragments.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Chicken Indomie</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Special noodles tossed with crisp vegetables and savory chicken fragments.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦4,500</span>
-                    <button onclick="addToCart('Chicken Indomie', 4500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦4,500</span>
+                    <button onclick="addToCart('Chicken Indomie', 4500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/klHYWombIpc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Yam and Egg Sauce</h3>
-                    <p class="text-gray-500 text-sm">Soft boiled white yams paired with rich, well-seasoned egg stew.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Yam and Egg Sauce</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Soft boiled white yams paired with rich, well-seasoned egg stew.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦5,500</span>
-                    <button onclick="addToCart('Yam and Egg Sauce', 5500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦5,500</span>
+                    <button onclick="addToCart('Yam and Egg Sauce', 5500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/4W0LYgFq874" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Delicious Yam Porridge</h3>
-                    <p class="text-gray-500 text-sm">Asaro made sweet and spicy with premium palm oil base.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Delicious Yam Porridge</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Asaro made sweet and spicy with premium palm oil base.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦5,000</span>
-                    <button onclick="addToCart('Delicious Yam Porridge', 5000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦5,000</span>
+                    <button onclick="addToCart('Delicious Yam Porridge', 5000)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/QX5KpBKhzy8" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Rich Egusi Soup</h3>
-                    <p class="text-gray-500 text-sm">Authentic, thick melon seed soup packed with traditional local spices.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Rich Egusi Soup</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Authentic, thick melon seed soup packed with traditional local spices.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦8,500</span>
-                    <button onclick="addToCart('Rich Egusi Soup', 8500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦8,500</span>
+                    <button onclick="addToCart('Rich Egusi Soup', 8500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/MaNbq16d5-E" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Soft Milky Donuts</h3>
-                    <p class="text-gray-500 text-sm">Fluffy sweet pastries loaded with fresh milky goodness.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Soft Milky Donuts</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Fluffy sweet pastries loaded with fresh milky goodness.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦3,600</span>
-                    <button onclick="addToCart('Soft Milky Donuts', 3600)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦3,600</span>
+                    <button onclick="addToCart('Soft Milky Donuts', 3600)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/CpWXFRpckno" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Fresh Palm Oil Rice</h3>
-                    <p class="text-gray-500 text-sm">Traditional village-style rice prepared with premium dark palm oil.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Fresh Palm Oil Rice</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Traditional village-style rice prepared with premium dark palm oil.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦5,800</span>
-                    <button onclick="addToCart('Fresh Palm Oil Rice', 5800)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦5,800</span>
+                    <button onclick="addToCart('Fresh Palm Oil Rice', 5800)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/7tJYxHxSe8U" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Crunchy Chin Chin</h3>
-                    <p class="text-gray-500 text-sm">Crispy, sweet party snacks fried to a perfect golden brown finish.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Crunchy Chin Chin</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Crispy, sweet party snacks fried to a perfect golden brown finish.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦3,500</span>
-                    <button onclick="addToCart('Crunchy Chin Chin', 3500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦3,500</span>
+                    <button onclick="addToCart('Crunchy Chin Chin', 3500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/E95PN2xsWz0" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Seasoned Chicken</h3>
-                    <p class="text-gray-500 text-sm">Deeply marinated aromatic parts roasted with peppers and local herbs.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Seasoned Chicken</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Deeply marinated aromatic parts roasted with peppers and local herbs.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦7,000</span>
-                    <button onclick="addToCart('Seasoned Chicken', 7000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦7,000</span>
+                    <button onclick="addToCart('Seasoned Chicken', 7000)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/zMUx8JpBZGc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Fresh Akara</h3>
-                    <p class="text-gray-500 text-sm">Light, fluffy bean cakes fried golden brown, crispy on the outside.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Fresh Akara</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Light, fluffy bean cakes fried golden brown, crispy on the outside.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦3,500</span>
-                    <button onclick="addToCart('Fresh Akara', 3500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦3,500</span>
+                    <button onclick="addToCart('Fresh Akara', 3500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/Ee887ldwcfY" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Intestine Peppersoup</h3>
-                    <p class="text-gray-500 text-sm">Hot, fiery traditional pepper broth slow cooked with tender offals.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Intestine Peppersoup</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Hot, fiery traditional pepper broth slow cooked with tender offals.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦6,000</span>
-                    <button onclick="addToCart('Intestine Peppersoup', 6000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦6,000</span>
+                    <button onclick="addToCart('Intestine Peppersoup', 6000)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/MYszkhrnx3Q" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Fried Rice Classic</h3>
-                    <p class="text-gray-500 text-sm">Perfect wok-fried local grains layered nicely with sweet veggies.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Fried Rice Classic</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Perfect wok-fried local grains layered nicely with sweet veggies.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦6,200</span>
-                    <button onclick="addToCart('Fried Rice Classic', 6200)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦6,200</span>
+                    <button onclick="addToCart('Fried Rice Classic', 6200)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-3 md:p-4 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/HNp8XPbWgtk" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold">Catfish Peppersoup and Plantain</h3>
-                    <p class="text-gray-500 text-sm">Freshly caught point-and-kill catfish simmered with green unripe plantains.</p>
+                    <h3 class="text-lg md:text-xl font-bold">Catfish Peppersoup and Plantain</h3>
+                    <p class="text-gray-500 text-xs md:text-sm">Freshly caught point-and-kill catfish simmered with green unripe plantains.</p>
                 </div>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-green-600 font-bold text-lg">₦9,500</span>
-                    <button onclick="addToCart('Catfish Peppersoup and Plantain', 9500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600 transition active:scale-95">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-base md:text-lg">₦9,500</span>
+                    <button onclick="addToCart('Catfish Peppersoup and Plantain', 9500)" class="bg-orange-500 text-white px-3 py-2 text-sm md:text-base rounded-lg font-bold hover:bg-orange-600 active:scale-95 transition">Add to Bag</button>
                 </div>
             </div>
 
         </div>
     </main>
 
-    <div id="cart" class="fixed bottom-5 right-5 bg-white p-6 rounded-2xl shadow-2xl max-w-xs border-2 border-red-500 z-50 hidden">
-        <h3 class="font-bold text-lg mb-2">🛍️ Your Order:</h3>
-        <div id="cart-items" class="text-sm space-y-1 mb-4 max-h-48 overflow-y-auto"></div>
-        <button onclick="sendToWhatsApp()" class="w-full bg-green-500 text-white py-2 rounded-lg font-bold shadow-md hover:bg-green-600 transition">
-            Order via WhatsApp 💬
+    <div id="cart" class="fixed bottom-0 left-0 right-0 md:bottom-5 md:right-5 md:left-auto bg-white p-4 md:p-6 rounded-t-2xl md:rounded-2xl shadow-2xl max-w-full md:max-w-xs border-t-2 md:border-2 border-red-500 z-50 hidden">
+        <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">🛍️ Your Order Bag:</h3>
+        <div id="cart-items" class="text-xs md:text-sm space-y-1 mb-3 max-h-24 md:max-h-48 overflow-y-auto"></div>
+        <button onclick="sendToWhatsApp()" class="w-full bg-green-500 text-white py-2.5 rounded-xl font-bold shadow-md hover:bg-green-600 active:scale-95 transition text-sm md:text-base flex justify-center items-center gap-2">
+            Send Order to WhatsApp 💬
         </button>
     </div>
 
@@ -264,14 +266,13 @@
             const cartDiv = document.getElementById('cart');
             const itemsDiv = document.getElementById('cart-items');
             
-            // Remove the hidden tag so the card shows up completely
             cartDiv.classList.remove('hidden');
             
             let total = 0;
             itemsDiv.innerHTML = bag.map(item => {
                 total += item.price;
-                return `<div class="py-1 border-b border-gray-100 flex justify-between"><span>• ${item.name}</span> <span class="font-semibold">₦${item.price.toLocaleString()}</span></div>`;
-            }).join('') + `<div class="font-bold mt-2 pt-2 border-t text-red-600 text-right">Total: ₦${total.toLocaleString()}</div>`;
+                return `<div class="py-1 border-b border-gray-100 flex justify-between text-xs md:text-sm"><span>• ${item.name}</span> <span class="font-semibold">₦${item.price.toLocaleString()}</span></div>`;
+            }).join('') + `<div class="font-bold mt-2 pt-1 text-red-600 text-right text-sm md:text-base">Total: ₦${total.toLocaleString()}</div>`;
         }
 
         function sendToWhatsApp() {
