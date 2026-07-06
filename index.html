@@ -14,58 +14,266 @@
     </header>
 
     <!-- 2. THE FOOD MENU -->
-    <main class="max-w-4xl mx-auto p-6">
-        <h2 class="text-2xl font-bold text-center my-6 text-red-600">Choose Your Yummy Food:</h2>
+    <main class="max-w-6xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center my-6 text-red-600">Our Delicious Menu</h2>
         
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Food Card 1 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100">
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" class="w-full h-40 object-cover rounded-lg">
-                <h3 class="text-xl font-bold mt-2">Cheese Pizza</h3>
-                <p class="text-gray-500 text-sm">Melty, gooey cheese on a crispy crust.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Item 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/aT6mqfQLj28" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Colorful Homemade Fried Rice</h3>
+                    <p class="text-gray-500 text-sm">Bright, vibrant, and packed with classic home flavors.</p>
+                </div>
                 <div class="flex justify-between items-center mt-4">
-                    <!-- Changed $ to ₦ here -->
-                    <span class="text-green-600 font-bold text-lg">₦10,000</span>
-                    <button onclick="addToCart('Cheese Pizza', 10000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-lg">₦6,500</span>
+                    <button onclick="addToCart('Colorful Homemade Fried Rice', 6500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
                 </div>
             </div>
 
-            <!-- Food Card 2 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100">
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" class="w-full h-40 object-cover rounded-lg">
-                <h3 class="text-xl font-bold mt-2">Yummy Burger</h3>
-                <p class="text-gray-500 text-sm">Juicy burger with fresh lettuce and sauce.</p>
+            <!-- Item 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/aT6mqfQLj28" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Delicious Fried Noodles</h3>
+                    <p class="text-gray-500 text-sm">Savory stir-fried noodles with a perfect mix of spices.</p>
+                </div>
                 <div class="flex justify-between items-center mt-4">
-                    <!-- Changed $ to ₦ here -->
-                    <span class="text-green-600 font-bold text-lg">₦8,000</span>
-                    <button onclick="addToCart('Yummy Burger', 8000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                    <span class="text-green-600 font-bold text-lg">₦4,000</span>
+                    <button onclick="addToCart('Delicious Fried Noodles', 4000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
                 </div>
             </div>
+
+            <!-- Item 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/d1FpdofRV94" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Freshly Baked Meat Pie</h3>
+                    <p class="text-gray-500 text-sm">Flaky golden crust stuffed with seasoned rich minced meat filling.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦3,500</span>
+                    <button onclick="addToCart('Freshly Baked Meat Pie', 3500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/kW0J40FpJcc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Soft Homemade Moi Moi</h3>
+                    <p class="text-gray-500 text-sm">Perfectly steamed bean cake, rich, smooth, and delicious.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦3,800</span>
+                    <button onclick="addToCart('Soft Homemade Moi Moi', 3800)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/vsWp7ASAV5Y" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Chicken Indomie</h3>
+                    <p class="text-gray-500 text-sm">Special noodles tossed with crisp vegetables and savory chicken fragments.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦4,500</span>
+                    <button onclick="addToCart('Chicken Indomie', 4500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/klHYWombIpc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Yam and Egg Sauce</h3>
+                    <p class="text-gray-500 text-sm">Soft boiled white yams paired with rich, well-seasoned egg stew.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦5,500</span>
+                    <button onclick="addToCart('Yam and Egg Sauce', 5500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/4W0LYgFq874" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Delicious Yam Porridge</h3>
+                    <p class="text-gray-500 text-sm">Asaro made sweet and spicy with premium palm oil base.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦5,000</span>
+                    <button onclick="addToCart('Delicious Yam Porridge', 5000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/QX5KpBKhzy8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Rich Egusi Soup</h3>
+                    <p class="text-gray-500 text-sm">Authentic, thick melon seed soup packed with traditional local spices.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦8,500</span>
+                    <button onclick="addToCart('Rich Egusi Soup', 8500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/MaNbq16d5-E" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Soft Milky Donuts</h3>
+                    <p class="text-gray-500 text-sm">Fluffy sweet pastries loaded with fresh milky goodness.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦3,600</span>
+                    <button onclick="addToCart('Soft Milky Donuts', 3600)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/CpWXFRpckno" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Fresh Palm Oil Rice</h3>
+                    <p class="text-gray-500 text-sm">Traditional village-style rice prepared with premium dark palm oil.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦5,800</span>
+                    <button onclick="addToCart('Fresh Palm Oil Rice', 5800)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/7tJYxHxSe8U" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Crunchy Chin Chin</h3>
+                    <p class="text-gray-500 text-sm">Crispy, sweet party snacks fried to a perfect golden brown finish.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦3,500</span>
+                    <button onclick="addToCart('Crunchy Chin Chin', 3500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/E95PN2xsWz0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Seasoned Chicken</h3>
+                    <p class="text-gray-500 text-sm">Deeply marinated aromatic parts roasted with peppers and local herbs.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦7,000</span>
+                    <button onclick="addToCart('Seasoned Chicken', 7000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/zMUx8JpBZGc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Fresh Akara</h3>
+                    <p class="text-gray-500 text-sm">Light, fluffy bean cakes fried golden brown, crispy on the outside.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦3,500</span>
+                    <button onclick="addToCart('Fresh Akara', 3500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 14 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/Ee887ldwcfY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Intestine Peppersoup</h3>
+                    <p class="text-gray-500 text-sm">Hot, fiery traditional pepper broth slow cooked with tender offals.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦6,000</span>
+                    <button onclick="addToCart('Intestine Peppersoup', 6000)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 15 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/MYszkhrnx3Q" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Fried Rice Classic</h3>
+                    <p class="text-gray-500 text-sm">Perfect wok-fried local grains layered nicely with sweet veggies.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦6,200</span>
+                    <button onclick="addToCart('Fried Rice Classic', 6200)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
+            <!-- Item 16 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video shadow-inner mb-3">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/HNp8XPbWgtk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold">Catfish Peppersoup and Plantain</h3>
+                    <p class="text-gray-500 text-sm">Freshly caught point-and-kill catfish simmered with green unripe plantains.</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-green-600 font-bold text-lg">₦9,500</span>
+                    <button onclick="addToCart('Catfish Peppersoup and Plantain', 9500)" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-orange-600">Add to Bag</button>
+                </div>
+            </div>
+
         </div>
     </main>
 
-    <!-- 3. YOUTUBE VIDEO SECTION -->
-    <section class="max-w-2xl mx-auto p-6 text-center">
-        <h2 class="text-2xl font-bold text-red-600 mb-4">Watch Us Cook!</h2>
-        <div class="rounded-xl overflow-hidden shadow-lg aspect-video">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <!-- 4. FLOATING SHOPPING CART -->
-    <div id="cart" class="fixed bottom-5 right-5 bg-white p-6 rounded-2xl shadow-2xl max-w-xs hidden border-2 border-red-500">
+    <!-- 3. FLOATING SHOPPING CART -->
+    <div id="cart" class="fixed bottom-5 right-5 bg-white p-6 rounded-2xl shadow-2xl max-w-xs hidden border-2 border-red-500 z-50">
         <h3 class="font-bold text-lg mb-2">🛍️ Your Order:</h3>
-        <div id="cart-items" class="text-sm space-y-1 mb-4"></div>
+        <div id="cart-items" class="text-sm space-y-1 mb-4 max-h-48 overflow-y-auto"></div>
         <button onclick="sendToWhatsApp()" class="w-full bg-green-500 text-white py-2 rounded-lg font-bold shadow-md hover:bg-green-600">
             Order via WhatsApp 💬
         </button>
     </div>
 
-    <!-- 5. THE SECRET BRAIN (JavaScript) -->
+    <!-- 4. THE SECRET BRAIN (JavaScript) -->
     <script>
         let bag = [];
-        // ⚠️ PUT YOUR WHATSAPP NUMBER BELOW! (Start with 234 for Nigeria, no spaces, no + sign)
-        // Example: "2348031234567"
         const MY_PHONE_NUMBER = "2348031234567"; 
 
         function addToCart(itemName, itemPrice) {
@@ -82,7 +290,6 @@
             let total = 0;
             itemsDiv.innerHTML = bag.map(item => {
                 total += item.price;
-                // Changed $ to ₦ here for the cart list
                 return `<div>• ${item.name} (₦${item.price.toLocaleString()})</div>`;
             }).join('') + `<div class="font-bold mt-2 pt-2 border-t text-red-600">Total: ₦${total.toLocaleString()}</div>`;
         }
@@ -92,7 +299,6 @@
             let total = 0;
             
             bag.forEach(item => {
-                // Changed $ to ₦ here for the WhatsApp message
                 text += `• ${item.name} (₦${item.price.toLocaleString()})\n`;
                 total += item.price;
             });
